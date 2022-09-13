@@ -37,13 +37,12 @@
       </div>
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <%= link_to root_path, class: "navbar-item" do %>
+          <%= link_to ramen_shops_path, class: "navbar-item" do %>
             ラーメン店一覧
           <% end %>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
- 
             <% if user_signed_in? %>
               <p class="navbar-item">ようこそ <%= current_user.username %> さん</p>
             <% end %>
